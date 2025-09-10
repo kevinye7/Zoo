@@ -484,6 +484,48 @@ footer p {
     transform: translateY(-2px);
 }
 
+/* Citations Section */
+.citations-section {
+    background: #f8f8f8;
+    border-left: 4px solid #ffcc00;
+    margin-top: 3rem;
+}
+
+.citations-section .section-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.citations-section .section-content li {
+    background: #ffffff;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 3px solid #ffcc00;
+    transition: transform 0.2s ease;
+}
+
+.citations-section .section-content li:hover {
+    transform: translateX(5px);
+}
+
+.citations-section .section-content a {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.citations-section .section-content a:hover {
+    text-decoration: underline;
+}
+
+.citations-section .section-content em {
+    color: #666666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
 /* ========================================
    RESPONSIVE DESIGN
    ======================================== */
