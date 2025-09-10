@@ -1,3 +1,4 @@
+/* National Geographic inspired design for David's Zoo */
 * {
     margin: 0;
     padding: 0;
@@ -5,19 +6,19 @@
 }
 
 body {
-    font-family: 'Gill Sans', sans-serif;
-    background: linear-gradient(135deg, #2c5530 0%, #1a3a1d 100%);
-    min-height: 100vh;
-    color: #333;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
 }
 
 /* Header and Navigation */
 header {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: #000000;
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 3px solid #ffcc00;
 }
 
 .top-nav {
@@ -30,75 +31,83 @@ header {
 }
 
 .home-btn {
-    background: #ff6b6b;
-    color: white;
+    background-color: #ffcc00;
+    color: #1a1a1a;
     border: none;
     padding: 0.7rem 1.2rem;
-    border-radius: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
     transition: all 0.3s ease;
+    border-radius: 0;
 }
 
 .home-btn:hover {
-    background: #ee5a24;
-    transform: scale(1.05);
+    background-color: #ff6b35;
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
 .top-nav h1 {
-    font-size: 2.5rem;
-    color: #2c5530;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -1px;
 }
 
 .nav-spacer {
-    width: 120px; /* Same width as home button to center the title */
+    width: 120px;
 }
 
 /* Main Content */
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem 2rem;
 }
 
 .welcome-section {
     text-align: center;
-    margin-bottom: 3rem;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 4rem;
+    padding: 3rem 2rem;
+    background-color: #f8f8f8;
+    border-left: 4px solid #ffcc00;
 }
 
 .welcome-section h2 {
-    font-size: 2.2rem;
-    color: #2c5530;
-    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
 }
 
 .welcome-section p {
     font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
+    color: #666666;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Animals Grid */
+/* Animals Grid - National Geographic Style */
 .animals-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .animal-card {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    background: #ffffff;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -108,88 +117,104 @@ main {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    transition: left 0.5s;
-}
-
-.animal-card:hover::before {
-    left: 100%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ffcc00 0%, #ff6b35 100%);
 }
 
 .animal-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .animal-image {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 5rem;
+    padding: 2rem 0 1rem 0;
     display: block;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+}
+
+.animal-content {
+    padding: 1.5rem 2rem 2rem 2rem;
 }
 
 .animal-card h3 {
-    font-size: 1.5rem;
-    color: #2c5530;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1a1a1a;
     margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
 }
 
 .animal-card p {
-    color: #666;
+    color: #666666;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-style: italic;
+    line-height: 1.5;
 }
 
 .animal-stats {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: flex-start;
+    gap: 0.5rem;
     flex-wrap: wrap;
 }
 
 .animal-stats span {
-    background: #f0f8ff;
-    color: #2c5530;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border: 2px solid #e0e0e0;
+    background-color: #f0f0f0;
+    color: #1a1a1a;
+    padding: 0.4rem 0.8rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Zoo Info Section */
 .zoo-info {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    padding: 3rem 2rem;
     text-align: center;
+    border-left: 4px solid #ffcc00;
+    margin-top: 2rem;
 }
 
 .zoo-info h3 {
-    font-size: 1.8rem;
-    color: #2c5530;
-    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
 }
 
 .zoo-info p {
     font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-    max-width: 800px;
+    color: #666666;
+    line-height: 1.7;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 /* Footer */
 footer {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+    background-color: #1a1a1a;
+    color: #cccccc;
     text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 2rem;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 3px solid #ffcc00;
+}
+
+footer p {
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
 /* Responsive Design */
