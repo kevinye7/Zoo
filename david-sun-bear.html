@@ -8,7 +8,10 @@
 <body>
     <header>
         <nav class="top-nav">
-            <button onclick="goHome()" class="home-btn">Home</button>
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
             <h1>David's Zoo</h1>
             <div class="nav-spacer"></div>
         </nav>
@@ -165,9 +168,6 @@
             </div>
         </section>
         
-        <div style="text-align: center;">
-            <button onclick="goBack()" class="back-btn">← Back to David's Zoo</button>
-        </div>
     </main>
     
     <footer>

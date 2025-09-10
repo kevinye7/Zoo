@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[ANIMAL_NAME] - [ZOO_NAME]</title>
+    <link rel="stylesheet" type="text/css" href="../css/david-zoo.css">
+    <script src="../js/navigation.js" defer></script>
+    <style>
+        /* [ANIMAL_NAME] specific hero styling - customize colors and patterns */
+        .hero-section {
+            background: linear-gradient(135deg, [PRIMARY_COLOR] 0%, [SECONDARY_COLOR] 100%);
+        }
+        
+        .hero-section::before {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="[PATTERN_NAME]" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">[PATTERN_SHAPE]</pattern></defs><rect width="100" height="100" fill="url(%23[PATTERN_NAME])"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
+            <h1>[ZOO_NAME]</h1>
+            <div class="nav-spacer"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">[ANIMAL_NAME]</h1>
+                <p class="hero-subtitle">[ANIMAL_SUBTITLE]</p>
+                <img src="../img/[HERO_IMAGE]" alt="[ANIMAL_NAME] in natural habitat" class="hero-image">
+            </div>
+        </section>
+        
+        <div class="content-grid">
+            <div class="main-content">
+                <h2 class="section-title">About the [ANIMAL_NAME]</h2>
+                <div class="section-content">
+                    <p>[ANIMAL_INTRODUCTION_PARAGRAPH]</p>
+                    
+                    <p>[ANIMAL_DETAILED_DESCRIPTION]</p>
+                </div>
+                
+                <h2 class="section-title">Physical Characteristics</h2>
+                <div class="section-content">
+                    <p>[PHYSICAL_DESCRIPTION_INTRO]</p>
+                    <ul>
+                        <li><strong>Size:</strong> [SIZE_INFO]</li>
+                        <li><strong>[FEATURE_1]:</strong> [FEATURE_1_DESCRIPTION]</li>
+                        <li><strong>[FEATURE_2]:</strong> [FEATURE_2_DESCRIPTION]</li>
+                        <li><strong>[FEATURE_3]:</strong> [FEATURE_3_DESCRIPTION]</li>
+                        <li><strong>[FEATURE_4]:</strong> [FEATURE_4_DESCRIPTION]</li>
+                        <li><strong>[FEATURE_5]:</strong> [FEATURE_5_DESCRIPTION]</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Habitat & Distribution</h2>
+                <div class="section-content">
+                    <p>[HABITAT_DESCRIPTION]</p>
+                    <ul>
+                        <li>[LOCATION_1]</li>
+                        <li>[LOCATION_2]</li>
+                        <li>[LOCATION_3]</li>
+                        <li>[LOCATION_4]</li>
+                    </ul>
+                    <p>[HABITAT_DETAILS]</p>
+                </div>
+                
+                <h2 class="section-title">Diet & Behavior</h2>
+                <div class="section-content">
+                    <p>[DIET_DESCRIPTION]</p>
+                    <ul>
+                        <li><strong>[FOOD_TYPE_1]:</strong> [FOOD_DESCRIPTION_1]</li>
+                        <li><strong>[FOOD_TYPE_2]:</strong> [FOOD_DESCRIPTION_2]</li>
+                        <li><strong>[FOOD_TYPE_3]:</strong> [FOOD_DESCRIPTION_3]</li>
+                        <li><strong>[FOOD_TYPE_4]:</strong> [FOOD_DESCRIPTION_4]</li>
+                    </ul>
+                    <p>[BEHAVIOR_DESCRIPTION]</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3>Conservation Status: [CONSERVATION_STATUS]</h3>
+                    <p>[CONSERVATION_MESSAGE]</p>
+                </div>
+                
+                <h2 class="section-title">Conservation Challenges</h2>
+                <div class="section-content">
+                    <p>[CONSERVATION_CHALLENGES_INTRO]</p>
+                    <ul>
+                        <li><strong>[THREAT_1]:</strong> [THREAT_1_DESCRIPTION]</li>
+                        <li><strong>[THREAT_2]:</strong> [THREAT_2_DESCRIPTION]</li>
+                        <li><strong>[THREAT_3]:</strong> [THREAT_3_DESCRIPTION]</li>
+                        <li><strong>[THREAT_4]:</strong> [THREAT_4_DESCRIPTION]</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Conservation Efforts</h2>
+                <div class="section-content">
+                    <p>[CONSERVATION_EFFORTS_INTRO]</p>
+                    <ul>
+                        <li><strong>[EFFORT_1]:</strong> [EFFORT_1_DESCRIPTION]</li>
+                        <li><strong>[EFFORT_2]:</strong> [EFFORT_2_DESCRIPTION]</li>
+                        <li><strong>[EFFORT_3]:</strong> [EFFORT_3_DESCRIPTION]</li>
+                        <li><strong>[EFFORT_4]:</strong> [EFFORT_4_DESCRIPTION]</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label">Scientific Name:</span> <span class="info-value">[SCIENTIFIC_NAME]</span></li>
+                        <li><span class="info-label">Common Names:</span> <span class="info-value">[COMMON_NAMES]</span></li>
+                        <li><span class="info-label">Size:</span> <span class="info-value">[SIZE_SHORT]</span></li>
+                        <li><span class="info-label">Weight:</span> <span class="info-value">[WEIGHT_RANGE]</span></li>
+                        <li><span class="info-label">Lifespan:</span> <span class="info-value">[LIFESPAN]</span></li>
+                        <li><span class="info-label">Diet:</span> <span class="info-value">[DIET_TYPE]</span></li>
+                        <li><span class="info-label">Habitat:</span> <span class="info-value">[HABITAT_TYPE]</span></li>
+                        <li><span class="info-label">Activity:</span> <span class="info-value">[ACTIVITY_PATTERN]</span></li>
+                        <li><span class="info-label">Conservation:</span> <span class="info-value">[CONSERVATION_STATUS_SHORT]</span></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Amazing Adaptations</h3>
+                    <ul class="info-list">
+                        <li>• [ADAPTATION_1]</li>
+                        <li>• [ADAPTATION_2]</li>
+                        <li>• [ADAPTATION_3]</li>
+                        <li>• [ADAPTATION_4]</li>
+                        <li>• [ADAPTATION_5]</li>
+                        <li>• [ADAPTATION_6]</li>
+                    </ul>
+                </div>
+                
+                <div class="conservation-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">[STAT_1_NUMBER]</span>
+                        <div class="stat-label">[STAT_1_LABEL]</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">[STAT_2_NUMBER]</span>
+                        <div class="stat-label">[STAT_2_LABEL]</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">[STAT_3_NUMBER]</span>
+                        <div class="stat-label">[STAT_3_LABEL]</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="../img/[GALLERY_IMAGE_1]" alt="[GALLERY_ALT_1]">
+                <div class="gallery-caption">[GALLERY_CAPTION_1]</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../img/[GALLERY_IMAGE_2]" alt="[GALLERY_ALT_2]">
+                <div class="gallery-caption">[GALLERY_CAPTION_2]</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../img/[GALLERY_IMAGE_3]" alt="[GALLERY_ALT_3]">
+                <div class="gallery-caption">[GALLERY_CAPTION_3]</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../img/[GALLERY_IMAGE_4]" alt="[GALLERY_ALT_4]">
+                <div class="gallery-caption">[GALLERY_CAPTION_4]</div>
+            </div>
+        </div>
+        
+        <section class="main-content citations-section">
+            <h2 class="section-title">References & Sources</h2>
+            <div class="section-content">
+                <p>The information on this page has been compiled from reputable scientific and conservation sources:</p>
+                <ul>
+                    <li><strong>[AUTHOR_1], [AUTHOR_2], et al.</strong> ([YEAR_1]). "[TITLE_1]." <em>[JOURNAL_1]</em>. [PUBLISHER_1].</li>
+                    <li><strong>[ORGANIZATION_1].</strong> ([YEAR_2]). "[TITLE_2]." <a href="[URL_1]" target="_blank">[WEBSITE_1]</a></li>
+                    <li><strong>[ORGANIZATION_2].</strong> ([YEAR_3]). "[TITLE_3]." <a href="[URL_2]" target="_blank">[WEBSITE_2]</a></li>
+                    <li><strong>[AUTHOR_3], [AUTHOR_4].</strong> ([YEAR_4]). "[TITLE_4]." <em>[JOURNAL_2]</em>, [VOLUME]([ISSUE]), [PAGES].</li>
+                    <li><strong>[AUTHOR_5].</strong> ([YEAR_5]). <em>[BOOK_TITLE]</em>. [PUBLISHER_2].</li>
+                    <li><strong>[AUTHOR_6], [AUTHOR_7].</strong> ([YEAR_6]). "[TITLE_5]." <em>[JOURNAL_3]</em>, [VOLUME_2]([ISSUE_2]), [PAGES_2].</li>
+                    <li><strong>[ORGANIZATION_3].</strong> ([YEAR_7]). "[TITLE_6]." <a href="[URL_3]" target="_blank">[WEBSITE_3]</a></li>
+                    <li><strong>[AUTHOR_8], et al.</strong> ([YEAR_8]). "[TITLE_7]." <em>[JOURNAL_4]</em>, [VOLUME_3]([ISSUE_3]), [PAGES_3].</li>
+                </ul>
+                <p><em>Last updated: [CURRENT_DATE]. Information is regularly reviewed and updated to reflect the latest scientific research and conservation data.</em></p>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>[ZOO_NAME] - Connecting people with wildlife since [ESTABLISHMENT_YEAR]</p>
+    </footer>
+</body>
+</html>

@@ -19,6 +19,10 @@ function goHome() {
     window.location.href = 'index.html';
 }
 
+function goBack() {
+    window.location.href = 'david-zoo.html';
+}
+
 function navigateToAnimal(animalPage) {
     window.location.href = animalPage;
 }

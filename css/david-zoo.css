@@ -30,7 +30,13 @@ header {
     margin: 0 auto;
 }
 
-.home-btn {
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.home-btn, .back-btn-nav {
     background-color: #ffcc00;
     color: #1a1a1a;
     border: none;
@@ -45,10 +51,18 @@ header {
     border-radius: 0;
 }
 
-.home-btn:hover {
+.home-btn:hover, .back-btn-nav:hover {
     background-color: #ff6b35;
     color: #ffffff;
     transform: translateY(-2px);
+}
+
+.back-btn-nav {
+    background-color: #666666;
+}
+
+.back-btn-nav:hover {
+    background-color: #ff6b35;
 }
 
 .top-nav h1 {
@@ -543,6 +557,15 @@ footer p {
     
     .nav-spacer {
         display: none;
+    }
+    
+    .nav-buttons {
+        gap: 0.5rem;
+    }
+    
+    .home-btn, .back-btn-nav {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
     }
     
     main {
