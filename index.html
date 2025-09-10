@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Johnny's Zoo</title>
+    <title>Zoo Explorer - Choose Your Adventure</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/navigation.js" defer></script>
   </head>
   <body>
-    <h1>Welcome to Johnny's Zoo</h1>
-    <h3>See the animals at the zoo:</h3>
-    <div class="link">
-      <a href="polar-bear.html">Polar Bear</a>
-    </div>
+    <header>
+      <h1>🦁 Zoo Explorer 🐘</h1>
+      <p>Welcome to our collaborative zoo project!</p>
+    </header>
+    
+    <main>
+      <h2>Choose a Zoo to Explore:</h2>
+      
+      <div class="zoo-selection">
+        <div class="zoo-card" id="david-zoo">
+          <h3>🌟 David's Zoo</h3>
+          <p>Explore amazing wildlife from around the world</p>
+          <button onclick="navigateToZoo('david')" class="zoo-button">Enter David's Zoo</button>
+        </div>
+        
+        <div class="zoo-card" id="kevin-zoo">
+          <h3>🎯 Kevin's Zoo</h3>
+          <p>Discover incredible creatures and their habitats</p>
+          <button onclick="navigateToZoo('kevin')" class="zoo-button">Enter Kevin's Zoo</button>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>A collaborative project by David & Kevin</p>
+    </footer>
   </body>
 </html>
