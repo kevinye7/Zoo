@@ -1,0 +1,273 @@
+/* National Geographic inspired design for David's Zoo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-btn {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+.home-btn:hover {
+    background-color: #ff6b35;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.top-nav h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -1px;
+}
+
+.nav-spacer {
+    width: 120px;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 3rem 2rem;
+    background-color: #f8f8f8;
+    border-left: 4px solid #ffcc00;
+}
+
+.welcome-section h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Animals Grid - National Geographic Style */
+.animals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.animal-card {
+    background: #ffffff;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.animal-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ffcc00 0%, #ff6b35 100%);
+}
+
+.animal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.animal-image {
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.animal-card:hover .animal-image img {
+    transform: scale(1.1);
+}
+
+.animal-content {
+    padding: 1.5rem 2rem 2rem 2rem;
+}
+
+.animal-card h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+.animal-card p {
+    color: #666666;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.animal-stats {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.animal-stats span {
+    background-color: #f0f0f0;
+    color: #1a1a1a;
+    padding: 0.4rem 0.8rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Zoo Info Section */
+.zoo-info {
+    background-color: #f8f8f8;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-left: 4px solid #ffcc00;
+    margin-top: 2rem;
+}
+
+.zoo-info h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.zoo-info p {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 3px solid #ffcc00;
+}
+
+footer p {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-nav {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .top-nav h1 {
+        font-size: 2rem;
+    }
+    
+    .nav-spacer {
+        display: none;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .welcome-section {
+        padding: 1.5rem;
+    }
+    
+    .welcome-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .animals-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .animal-image {
+        font-size: 3rem;
+    }
+    
+    .animal-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
