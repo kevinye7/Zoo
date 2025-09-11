@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polar Bear - Kevin's Zoo</title>
+    <link rel="stylesheet" type="text/css" href="css/david-zoo.css">
+    <script src="js/navigation.js" defer></script>
+    <style>
+        /* Polar Bear specific hero styling */
+        .hero-section {
+            background: linear-gradient(135deg, #4682b4 0%, #87ceeb 100%);
+        }
+        
+        .hero-section::before {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="snowflakes" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="3" fill="rgba(255,255,255,0.2)"/></pattern></defs><rect width="100" height="100" fill="url(%23snowflakes)"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
+            <h1>Kevin's Wildlife Sanctuary</h1>
+            <div class="nav-spacer"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Polar Bear</h1>
+                <p class="hero-subtitle">Arctic's Majestic Ice Bear</p>
+                <img src="img/polar-bear.jpg" alt="Polar Bear on ice" class="hero-image">
+            </div>
+        </section>
+        
+        <div class="content-grid">
+            <div class="main-content">
+                <h2 class="section-title">About the Polar Bear</h2>
+                <div class="section-content">
+                    <p>The Polar Bear (<em>Ursus maritimus</em>) is the largest land carnivore on Earth and a powerful symbol of the Arctic. These magnificent white bears are perfectly adapted to life in the harsh, frozen environment of the far north, with specialized features that allow them to thrive where few other animals can survive.</p>
+                    
+                    <p>Polar Bears are excellent swimmers and can cover long distances in search of food. Their existence is intimately tied to sea ice, which they use as a platform for hunting their primary prey, seals. As the Arctic warms due to climate change, Polar Bears face an uncertain future as their sea ice habitat disappears at an alarming rate.</p>
+                </div>
+                
+                <h2 class="section-title">Physical Characteristics</h2>
+                <div class="section-content">
+                    <p>Polar Bears have evolved remarkable adaptations for Arctic survival:</p>
+                    <ul>
+                        <li><strong>Size:</strong> Males weigh 350-700 kg (770-1,540 lbs), females 150-250 kg (330-550 lbs)</li>
+                        <li><strong>Fur:</strong> Thick, water-repellent white fur that provides camouflage and insulation</li>
+                        <li><strong>Skin:</strong> Black skin underneath fur to absorb heat from sunlight</li>
+                        <li><strong>Paws:</strong> Large, wide paws act as snowshoes and swimming paddles</li>
+                        <li><strong>Claws:</strong> Short, sharp claws for gripping ice and capturing prey</li>
+                        <li><strong>Teeth:</strong> Sharp, strong teeth adapted for a carnivorous diet</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Habitat & Distribution</h2>
+                <div class="section-content">
+                    <p>Polar Bears are found throughout the Arctic region, including:</p>
+                    <ul>
+                        <li>Northern Canada and Alaska</li>
+                        <li>Greenland and Svalbard (Norway)</li>
+                        <li>Northern Russia (Siberia)</li>
+                        <li>The Arctic Ocean and surrounding seas</li>
+                    </ul>
+                    <p>Their habitat is entirely dependent on sea ice, which they use as a platform for hunting, breeding, and sometimes denning. Polar Bears are considered marine mammals because they spend so much of their lives on sea ice and are excellent swimmers.</p>
+                </div>
+                
+                <h2 class="section-title">Diet & Hunting Behavior</h2>
+                <div class="section-content">
+                    <p>Polar Bears are apex predators with a specialized diet:</p>
+                    <ul>
+                        <li><strong>Primary Prey:</strong> Ringed seals and bearded seals</li>
+                        <li><strong>Secondary Food:</strong> Walrus, beluga whales, bird eggs, and vegetation</li>
+                        <li><strong>Hunting Methods:</strong> Still-hunting at seal breathing holes, stalking on ice</li>
+                        <li><strong>Feeding Patterns:</strong> Feast-or-famine cycle based on seal availability</li>
+                    </ul>
+                    <p>Polar Bears have an exceptional sense of smell, able to detect seals nearly a kilometer away and under a meter of snow. They are patient hunters, often waiting for hours at seal breathing holes before striking with incredible speed and power.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3>Conservation Status: VULNERABLE</h3>
+                    <p>Polar Bears face existential threats from climate change-induced habitat loss. With Arctic sea ice declining at a rate of nearly 13% per decade, their hunting platforms are disappearing, leading to nutritional stress and population declines.</p>
+                </div>
+                
+                <h2 class="section-title">Conservation Challenges</h2>
+                <div class="section-content">
+                    <p>Polar Bears face multiple serious threats:</p>
+                    <ul>
+                        <li><strong>Climate Change:</strong> Loss of sea ice habitat due to global warming</li>
+                        <li><strong>Reduced Access to Prey:</strong> Less sea ice means fewer hunting opportunities</li>
+                        <li><strong>Pollution:</strong> Accumulation of toxins in the Arctic food chain</li>
+                        <li><strong>Human Conflict:</strong> Increasing interactions as bears search for food</li>
+                        <li><strong>Oil Development:</strong> Potential for oil spills in sensitive Arctic habitats</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Conservation Efforts</h2>
+                <div class="section-content">
+                    <p>International efforts are underway to protect Polar Bears:</p>
+                    <ul>
+                        <li><strong>Habitat Protection:</strong> Identifying and protecting critical habitat areas</li>
+                        <li><strong>Climate Action:</strong> Supporting global efforts to reduce greenhouse gases</li>
+                        <li><strong>Research:</strong> Monitoring populations and studying bear behavior</li>
+                        <li><strong>International Agreements:</strong> Cooperation between Arctic nations</li>
+                        <li><strong>Community Programs:</strong> Reducing human-bear conflicts in northern communities</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label">Scientific Name:</span> <span class="info-value">Ursus maritimus</span></li>
+                        <li><span class="info-label">Common Names:</span> <span class="info-value">Polar Bear, Ice Bear</span></li>
+                        <li><span class="info-label">Size:</span> <span class="info-value">2-3m length</span></li>
+                        <li><span class="info-label">Weight:</span> <span class="info-value">350-700 kg (males)</span></li>
+                        <li><span class="info-label">Lifespan:</span> <span class="info-value">20-25 years</span></li>
+                        <li><span class="info-label">Diet:</span> <span class="info-value">Carnivore</span></li>
+                        <li><span class="info-label">Habitat:</span> <span class="info-value">Arctic sea ice</span></li>
+                        <li><span class="info-label">Activity:</span> <span class="info-value">Diurnal</span></li>
+                        <li><span class="info-label">Conservation:</span> <span class="info-value">Vulnerable</span></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Amazing Adaptations</h3>
+                    <ul class="info-list">
+                        <li>• Can swim up to 100km without rest</li>
+                        <li>• Sense of smell detects prey 1km away</li>
+                        <li>• Fur appears white but is actually transparent</li>
+                        <li>• Paws have small bumps (papillae) for traction on ice</li>
+                        <li>• 3-4 inches of blubber for insulation</li>
+                        <li>• Can fast for months during summer ice melt</li>
+                    </ul>
+                </div>
+                
+                <div class="conservation-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">22,000-31,000</span>
+                        <div class="stat-label">Wild Population</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">40%</span>
+                        <div class="stat-label">Projected Decline (30 years)</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5</span>
+                        <div class="stat-label">Range Countries</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/polar-bear-swimming.jpg" alt="Polar Bear swimming">
+                <div class="gallery-caption">Polar Bear demonstrating its excellent swimming abilities</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/polar-bear-habitat.jpg" alt="Polar Bear on ice">
+                <div class="gallery-caption">Polar Bear on its natural sea ice habitat</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/polar-bear-cubs.jpg" alt="Polar Bear family">
+                <div class="gallery-caption">Polar Bear mother with her cubs</div>
+            </div>
+        </div>
+        
+        <section class="main-content citations-section">
+            <h2 class="section-title">References & Sources</h2>
+            <div class="section-content">
+                <p>The information on this page has been compiled from reputable scientific and conservation sources:</p>
+                <ul>
+                    <li><strong>Wiig, Ø., et al.</strong> (2015). "Ursus maritimus." <em>The IUCN Red List of Threatened Species</em>. International Union for Conservation of Nature.</li>
+                    <li><strong>Polar Bears International.</strong> (2023). "Polar Bear Facts." <a href="https://www.polarbearsinternational.org" target="_blank">www.polarbearsinternational.org</a></li>
+                    <li><strong>World Wildlife Fund (WWF).</strong> (2023). "Polar Bear." <a href="https://www.worldwildlife.org" target="_blank">www.worldwildlife.org</a></li>
+                    <li><strong>Stirling, I., & Derocher, A. E.</strong> (2012). "Effects of climate warming on polar bears: a review of the evidence." <em>Global Change Biology</em>, 18(9), 2694-2706.</li>
+                    <li><strong>Amstrup, S. C., et al.</strong> (2008). "Forecasting the range-wide status of polar bears at selected times in the 21st century." <em>US Geological Survey Administrative Report</em>.</li>
+                    <li><strong>Derocher, A. E., et al.</strong> (2004). "Polar bears in a warming climate." <em>Integrative and Comparative Biology</em>, 44(2), 163-176.</li>
+                    <li><strong>Arctic Council.</strong> (2023). "Polar Bear Conservation Strategy." <a href="https://www.arctic-council.org" target="_blank">www.arctic-council.org</a></li>
+                    <li><strong>Obbard, M. E., et al.</strong> (2010). "Polar bear ecology and management in Hudson Bay in the face of climate change." <em>A Little Less Arctic</em>, 93-115.</li>
+                </ul>
+                <p><em>Last updated: January 2025. Information is regularly reviewed and updated to reflect the latest scientific research and conservation data.</em></p>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>Kevin's Wildlife Sanctuary - Connecting people with wildlife since 2025</p>
+    </footer>
+</body>
+</html>
