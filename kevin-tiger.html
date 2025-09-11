@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bengal Tiger - Kevin's Zoo</title>
+    <link rel="stylesheet" type="text/css" href="css/david-zoo.css">
+    <script src="js/navigation.js" defer></script>
+    <style>
+        /* Bengal Tiger specific hero styling */
+        .hero-section {
+            background: linear-gradient(135deg, #ff6b35 0%, #ffcc00 100%);
+        }
+        
+        .hero-section::before {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="jungle" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M0,0 L25,25 M25,0 L0,25" stroke="rgba(255,255,255,0.1)" stroke-width="2"/></pattern></defs><rect width="100" height="100" fill="url(%23jungle)"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
+            <h1>Kevin's Wildlife Sanctuary</h1>
+            <div class="nav-spacer"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Bengal Tiger</h1>
+                <p class="hero-subtitle">Striped Monarch of the Jungle</p>
+                <img src="img/tiger.jpg" alt="Bengal Tiger in forest" class="hero-image">
+            </div>
+        </section>
+        
+        <div class="content-grid">
+            <div class="main-content">
+                <h2 class="section-title">About the Bengal Tiger</h2>
+                <div class="section-content">
+                    <p>The Bengal Tiger (<em>Panthera tigris tigris</em>) is the most numerous tiger subspecies and a powerful symbol of strength and beauty in Asian cultures. These magnificent big cats are apex predators that play a crucial role in maintaining the health and balance of their forest ecosystems.</p>
+                    
+                    <p>With their distinctive orange coat marked with dark stripes, white underside, and powerful build, Bengal Tigers are perfectly adapted for life as stealthy predators. Each tiger's stripe pattern is unique, much like human fingerprints, allowing researchers to identify individuals in the wild.</p>
+                </div>
+                
+                <h2 class="section-title">Physical Characteristics</h2>
+                <div class="section-content">
+                    <p>Bengal Tigers possess impressive physical attributes:</p>
+                    <ul>
+                        <li><strong>Size:</strong> Males measure 2.7-3.1m (9-10ft) long and weigh 180-260kg (400-570lbs)</li>
+                        <li><strong>Coat:</strong> Orange-brown fur with black stripes and white underside</li>
+                        <li><strong>Teeth:</strong> 30 teeth including 4-inch canines for killing prey</li>
+                        <li><strong>Claws:</strong> Retractable claws up to 4 inches long</li>
+                        <li><strong>Eyes:</strong> Excellent night vision with binocular vision for depth perception</li>
+                        <li><strong>Strength:</strong> Can drag prey weighing over twice their own weight</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Habitat & Distribution</h2>
+                <div class="section-content">
+                    <p>Bengal Tigers are found across South Asia in various habitats:</p>
+                    <ul>
+                        <li>Mangrove forests of the Sundarbans (India/Bangladesh)</li>
+                        <li>Dry grasslands of Rajasthan, India</li>
+                        <li>Moist deciduous forests of Central India</li>
+                        <li>Terai arc landscape of Nepal and India</li>
+                        <li>Tropical rainforests of Western Ghats, India</li>
+                    </ul>
+                    <p>Their current range is fragmented across India, Bangladesh, Nepal, and Bhutan, with India hosting about 70% of the world's wild tiger population.</p>
+                </div>
+                
+                <h2 class="section-title">Diet & Hunting Behavior</h2>
+                <div class="section-content">
+                    <p>Bengal Tigers are skilled predators with specific hunting strategies:</p>
+                    <ul>
+                        <li><strong>Primary Prey:</strong> Chital deer, sambar deer, wild boar, and gaur</li>
+                        <li><strong>Hunting Method:</strong> Stalk-and-ambush predators using stealth and camouflage</li>
+                        <li><strong>Success Rate:</strong> About 1 successful hunt in 10-20 attempts</li>
+                        <li><strong>Feeding:</strong> Can consume 18-40kg of meat in one feeding</li>
+                        <li><strong>Water Dependency:</strong> Need regular access to water sources</li>
+                    </ul>
+                    <p>Tigers are primarily nocturnal hunters, using their excellent night vision and stealth to approach prey undetected. They typically kill with a powerful bite to the neck or throat, suffocating their prey.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3>Conservation Status: ENDANGERED</h3>
+                    <p>Bengal Tigers face severe threats from habitat loss, poaching, and human-wildlife conflict. Despite conservation efforts, their populations remain vulnerable with only about 3,000 individuals left in the wild.</p>
+                </div>
+                
+                <h2 class="section-title">Conservation Challenges</h2>
+                <div class="section-content">
+                    <p>Bengal Tigers face multiple critical threats:</p>
+                    <ul>
+                        <li><strong>Habitat Fragmentation:</strong> Forests being divided by human development</li>
+                        <li><strong>Poaching:</strong> Illegal hunting for skins, bones, and body parts</li>
+                        <li><strong>Human-Wildlife Conflict:</strong> Retaliatory killing for livestock predation</li>
+                        <li><strong>Prey Depletion:</strong> Overhunting of tiger prey species by humans</li>
+                        <li><strong>Climate Change:</strong> Rising sea levels threatening Sundarbans habitat</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Conservation Efforts</h2>
+                <div class="section-content">
+                    <p>Significant efforts are underway to protect Bengal Tigers:</p>
+                    <ul>
+                        <li><strong>Project Tiger:</strong> India's flagship tiger conservation program since 1973</li>
+                        <li><strong>Protected Areas:</strong> Network of tiger reserves and national parks</li>
+                        <li><strong>Anti-Poaching Patrols:</strong> Armed forest guards protecting tiger habitats</li>
+                        <li><strong>Community Involvement:</strong> Engaging local communities in conservation</li>
+                        <li><strong>Corridor Protection:</strong> Maintaining connectivity between forest fragments</li>
+                        <li><strong>International Cooperation:</strong> Cross-border conservation initiatives</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label">Scientific Name:</span> <span class="info-value">Panthera tigris tigris</span></li>
+                        <li><span class="info-label">Common Names:</span> <span class="info-value">Bengal Tiger, Royal Bengal Tiger</span></li>
+                        <li><span class="info-label">Size:</span> <span class="info-value">2.7-3.1m length</span></li>
+                        <li><span class="info-label">Weight:</span> <span class="info-value">180-260 kg (males)</span></li>
+                        <li><span class="info-label">Lifespan:</span> <span class="info-value">10-15 years wild</span></li>
+                        <li><span class="info-label">Diet:</span> <span class="info-value">Carnivore</span></li>
+                        <li><span class="info-label">Habitat:</span> <span class="info-value">Forests, grasslands</span></li>
+                        <li><span class="info-label">Activity:</span> <span class="info-value">Nocturnal</span></li>
+                        <li><span class="info-label">Conservation:</span> <span class="info-value">Endangered</span></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Amazing Adaptations</h3>
+                    <ul class="info-list">
+                        <li>• Stripes provide perfect camouflage in forests</li>
+                        <li>• Can leap 9-10 meters in a single bound</li>
+                        <li>• Excellent swimmers who enjoy water</li>
+                        <li>• Roar can be heard 3km away</li>
+                        <li>• White spots on ears act as false eyes</li>
+                        <li>• Can run up to 60km/h in short bursts</li>
+                    </ul>
+                </div>
+                
+                <div class="conservation-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">~3,000</span>
+                        <div class="stat-label">Wild Population</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50</span>
+                        <div class="stat-label">Tiger Reserves</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">93%</span>
+                        <div class="stat-label">Historic Range Lost</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/tiger-habitat.jpg" alt="Bengal Tiger in forest">
+                <div class="gallery-caption">Bengal Tiger demonstrating perfect camouflage in its natural habitat</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/tiger-swimming.jpg" alt="Tiger swimming">
+                <div class="gallery-caption">Bengal Tiger swimming - unlike most cats, tigers enjoy water</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/tiger-roar.jpg" alt="Tiger roaring">
+                <div class="gallery-caption">The powerful roar of a Bengal Tiger can be heard kilometers away</div>
+            </div>
+        </div>
+        
+        <section class="main-content citations-section">
+            <h2 class="section-title">References & Sources</h2>
+            <div class="section-content">
+                <p>The information on this page has been compiled from reputable scientific and conservation sources:</p>
+                <ul>
+                    <li><strong>Goodrich, J., et al.</strong> (2015). "Panthera tigris." <em>The IUCN Red List of Threatened Species</em>. International Union for Conservation of Nature.</li>
+                    <li><strong>World Wildlife Fund (WWF).</strong> (2023). "Bengal Tiger." <a href="https://www.worldwildlife.org" target="_blank">www.worldwildlife.org</a></li>
+                    <li><strong>National Tiger Conservation Authority.</strong> (2023). "Project Tiger." <a href="https://ntca.gov.in" target="_blank">ntca.gov.in</a></li>
+                    <li><strong>Thapar, V.</strong> (2006). <em>Tiger: The Ultimate Guide</em>. CDS Books.</li>
+                    <li><strong>Karanth, K. U., & Nichols, J. D.</strong> (2002). <em>Monitoring Tigers and Their Prey: A Manual for Researchers, Managers and Conservationists in Tropical Asia</em>. Centre for Wildlife Studies.</li>
+                    <li><strong>Walston, J., et al.</strong> (2010). "Bringing the tiger back from the brink—the six percent solution." <em>PLoS Biology</em>, 8(9), e1000485.</li>
+                    <li><strong>Global Tiger Initiative.</strong> (2023). "Tiger Conservation." <a href="https://www.globaltigerinitiative.org" target="_blank">www.globaltigerinitiative.org</a></li>
+                    <li><strong>Smith, J. L. D., et al.</strong> (1998). "Territoriality and social organization of tigers in Nepal." <em>Animal Behaviour</em>, 56(2), 435-441.</li>
+                </ul>
+                <p><em>Last updated: January 2025. Information is regularly reviewed and updated to reflect the latest scientific research and conservation data.</em></p>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>Kevin's Wildlife Sanctuary - Connecting people with wildlife since 2025</p>
+    </footer>
+</body>
+</html>
