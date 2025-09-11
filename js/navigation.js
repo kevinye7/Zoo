@@ -20,7 +20,12 @@ function goHome() {
 }
 
 function goBack() {
-    window.location.href = 'david-zoo.html';
+    // Go back to the appropriate zoo page
+    if (window.location.pathname.includes('kevin-')) {
+        window.location.href = 'kevin-zoo.html';
+    } else {
+        window.location.href = 'david-zoo.html';
+    }
 }
 
 function navigateToAnimal(animalPage) {
@@ -52,8 +57,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-// Back navigation helper
-function goBack() {
-    window.history.back();
-}
