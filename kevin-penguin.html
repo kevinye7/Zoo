@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emperor Penguin - Kevin's Zoo</title>
+    <link rel="stylesheet" type="text/css" href="css/david-zoo.css">
+    <script src="js/navigation.js" defer></script>
+    <style>
+        /* Emperor Penguin specific hero styling */
+        .hero-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 50%, #ecf0f1 100%);
+        }
+        
+        .hero-section::before {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="snow" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="2" fill="rgba(255,255,255,0.3)"/></pattern></defs><rect width="100" height="100" fill="url(%23snow)"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
+            <h1>Kevin's Wildlife Sanctuary</h1>
+            <div class="nav-spacer"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Emperor Penguin</h1>
+                <p class="hero-subtitle">Antarctic's Resilient Survivors</p>
+                <img src="img/penguin.jpg" alt="Emperor Penguin colony" class="hero-image">
+            </div>
+        </section>
+        
+        <div class="content-grid">
+            <div class="main-content">
+                <h2 class="section-title">About the Emperor Penguin</h2>
+                <div class="section-content">
+                    <p>The Emperor Penguin (<em>Aptenodytes forsteri</em>) is the tallest and heaviest of all living penguin species and one of the most extraordinary birds on Earth. These remarkable birds endure the harshest conditions on the planet, breeding during the Antarctic winter where temperatures can drop to -60°C (-76°F) and winds can reach 200 km/h (124 mph).</p>
+                    
+                    <p>Emperor Penguins are famous for their incredible breeding strategy, where males incubate the single egg through the brutal Antarctic winter while females journey to the sea to feed. Their social behavior, unique adaptations, and resilience in extreme conditions make them one of nature's most fascinating species.</p>
+                </div>
+                
+                <h2 class="section-title">Physical Characteristics</h2>
+                <div class="section-content">
+                    <p>Emperor Penguins have evolved remarkable adaptations for Antarctic survival:</p>
+                    <ul>
+                        <li><strong>Size:</strong> Stand 100-130 cm (39-51 in) tall and weigh 22-45 kg (49-99 lb)</li>
+                        <li><strong>Plumage:</strong> Black head and back, white belly, with yellow-gold patches on chest and ears</li>
+                        <li><strong>Insulation:</strong> Four layers of scale-like feathers with dense underlying down</li>
+                        <li><strong>Flippers:</strong> Modified into powerful wings for efficient swimming</li>
+                        <li><strong>Feet:</strong> Webbed with sharp claws for ice traction</li>
+                        <li><strong>Beak:</strong> Strong, sharp beak for catching prey</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Habitat & Distribution</h2>
+                <div class="section-content">
+                    <p>Emperor Penguins are found exclusively in Antarctica:</p>
+                    <ul>
+                        <li>Coastal Antarctica and surrounding pack ice</li>
+                        <li>46 known breeding colonies around continent</li>
+                        <li>Ice shelves and stable sea ice platforms</li>
+                        <li>Open water areas for feeding</li>
+                    </ul>
+                    <p>They are the only penguin species that breeds during the Antarctic winter, relying on the stable sea ice that forms around the continent. Their distribution is closely tied to the availability of krill and fish in the Southern Ocean.</p>
+                </div>
+                
+                <h2 class="section-title">Diet & Feeding Behavior</h2>
+                <div class="section-content">
+                    <p>Emperor Penguins are expert divers and hunters:</p>
+                    <ul>
+                        <li><strong>Primary Diet:</strong> Fish, krill, and squid</li>
+                        <li><strong>Diving Ability:</strong> Can dive to depths of 500 meters (1,640 feet)</li>
+                        <li><strong>Breath Holding:</strong> Can stay submerged for up to 27 minutes</li>
+                        <li><strong>Hunting Strategy:</strong> Pursuit diving in open water</li>
+                        <li><strong>Feeding Trips:</strong> Can travel 100-200 km to feeding grounds</li>
+                        <li><strong>Energy Storage:</strong> Build fat reserves for breeding fasting</li>
+                    </ul>
+                    <p>Their streamlined bodies and solid bones (unlike hollow-boned flying birds) allow them to dive deep and swim efficiently. They can reach speeds of 6-9 km/h (4-6 mph) underwater.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3>Conservation Status: NEAR THREATENED</h3>
+                    <p>Emperor Penguins face growing threats from climate change, particularly the loss of stable sea ice needed for breeding. While current populations are relatively stable, projected ice loss could dramatically impact their survival in coming decades.</p>
+                </div>
+                
+                <h2 class="section-title">Breeding Behavior</h2>
+                <div class="section-content">
+                    <p>Emperor Penguins have one of the most extraordinary breeding cycles in the animal kingdom:</p>
+                    <ul>
+                        <li><strong>Courtship:</strong> Complex vocal and visual displays in March-April</li>
+                        <li><strong>Egg Laying:</strong> Single egg laid in May, immediately transferred to male</li>
+                        <li><strong>Incubation:</strong> Males fast for 115 days while incubating egg on feet</li>
+                        <li><strong>Hatching:</strong> Chicks hatch in July-August after 65 days</li>
+                        <li><strong>Crèches:</strong> Chicks form groups for warmth and protection</li>
+                        <li><strong>Fledging:</strong> Chicks fledge in December-January at 5-6 months old</li>
+                    </ul>
+                    <p>Males lose up to 45% of their body weight during the incubation period, surviving on stored fat reserves while protecting the egg from extreme cold.</p>
+                </div>
+                
+                <h2 class="section-title">Conservation Challenges</h2>
+                <div class="section-content">
+                    <p>Emperor Penguins face significant threats from climate change:</p>
+                    <ul>
+                        <li><strong>Sea Ice Loss:</strong> Declining stable breeding platforms</li>
+                        <li><strong>Food Availability:</strong> Changing krill and fish distributions</li>
+                        <li><strong>Extreme Weather:</strong> Increased storm frequency and intensity</li>
+                        <li><strong>Human Disturbance:</strong> Research activities and tourism impacts</li>
+                        <li><strong>Fisheries Competition:</strong> Commercial krill fishing in Southern Ocean</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Conservation Efforts</h2>
+                <div class="section-content">
+                    <p>International efforts are underway to protect Emperor Penguins:</p>
+                    <ul>
+                        <li><strong>Antarctic Treaty:</strong> Protects penguins and their habitat</li>
+                        <li><strong>Marine Protected Areas:</strong> CCAMLR establishing conservation zones</li>
+                        <li><strong>Climate Action:</strong> Global efforts to reduce greenhouse gases</li>
+                        <li><strong>Research Monitoring:</strong> Satellite tracking and population studies</li>
+                        <li><strong>Tourism Regulations:</strong> Strict guidelines to minimize disturbance</li>
+                        <li><strong>Krill Fisheries Management:</strong> Sustainable harvesting regulations</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label">Scientific Name:</span> <span class="info-value">Aptenodytes forsteri</span></li>
+                        <li><span class="info-label">Common Names:</span> <span class="info-value">Emperor Penguin</span></li>
+                        <li><span class="info-label">Height:</span> <span class="info-value">100-130 cm</span></li>
+                        <li><span class="info-label">Weight:</span> <span class="info-value">22-45 kg</span></li>
+                        <li><span class="info-label">Lifespan:</span> <span class="info-value">15-20 years</span></li>
+                        <li><span class="info-label">Diet:</span> <span class="info-value">Carnivore</span></li>
+                        <li><span class="info-label">Habitat:</span> <span class="info-value">Antarctic ice</span></li>
+                        <li><span class="info-label">Activity:</span> <span class="info-value">Diurnal</span></li>
+                        <li><span class="info-label">Conservation:</span> <span class="info-value">Near Threatened</span></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Amazing Adaptations</h3>
+                    <ul class="info-list">
+                        <li>• Survive temperatures of -60°C (-76°F)</li>
+                        <li>• Dive to 500m depth for 27 minutes</li>
+                        <li>• Huddle together for warmth in rotating groups</li>
+                        <li>• Special blood chemistry for deep diving</li>
+                        <li>• Waterproof feathers with air insulation</li>
+                        <li>• Males fast for 115 days while incubating</li>
+                    </ul>
+                </div>
+                
+                <div class="conservation-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">256,500</span>
+                        <div class="stat-label">Breeding Pairs</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">46</span>
+                        <div class="stat-label">Known Colonies</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50%</span>
+                        <div class="stat-label">Projected Decline (80 years)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/penguin-huddling.jpg" alt="Emperor Penguin colony">
+                <div class="gallery-caption">Emperor Penguin colony huddling for warmth in Antarctic winter</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/penguin-chick.jpg" alt="Penguin with chick">
+                <div class="gallery-caption">Emperor Penguin parent caring for its fluffy chick</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/penguin-swimming.jpg" alt="Penguins swimming">
+                <div class="gallery-caption">Emperor Penguins swimming - graceful and powerful in water</div>
+            </div>
+        </div>
+        
+        <section class="main-content citations-section">
+            <h2 class="section-title">References & Sources</h2>
+            <div class="section-content">
+                <p>The information on this page has been compiled from reputable scientific and conservation sources:</p>
+                <ul>
+                    <li><strong>BirdLife International.</strong> (2020). "Aptenodytes forsteri." <em>The IUCN Red List of Threatened Species</em>. International Union for Conservation of Nature.</li>
+                    <li><strong>British Antarctic Survey.</strong> (2023). "Emperor Penguin Research." <a href="https://www.bas.ac.uk" target="_blank">www.bas.ac.uk</a></li>
+                    <li><strong>National Science Foundation.</strong> (2023). "Antarctic Biology Program." <a href="https://www.nsf.gov" target="_blank">www.nsf.gov</a></li>
+                    <li><strong>Kooyman, G. L., et al.</strong> (2004). "Emperor penguin biology and diving behavior." <em>BioScience</em>, 54(3), 232-237.</li>
+                    <li><strong>Le Maho, Y., et al.</strong> (2011). "Emperor penguins and climate change." <em>Nature</em>, 478(7367), 175-176.</li>
+                    <li><strong>Jenouvrier, S., et al.</strong> (2014). "Projected continent-wide declines of the emperor penguin under climate change." <em>Nature Climate Change</em>, 4(8), 715-718.</li>
+                    <li><strong>Commission for the Conservation of Antarctic Marine Living Resources (CCAMLR).</strong> (2023). "Marine Protected Areas." <a href="https://www.ccamlr.org" target="_blank">www.ccamlr.org</a></li>
+                    <li><strong>Williams, T. D.</strong> (1995). <em>The Penguins: Spheniscidae</em>. Oxford University Press.</li>
+                </ul>
+                <p><em>Last updated: January 2025. Information is regularly reviewed and updated to reflect the latest scientific research and conservation data.</em></p>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>Kevin's Wildlife Sanctuary - Connecting people with wildlife since 2025</p>
+    </footer>
+</body>
+</html>
