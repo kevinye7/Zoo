@@ -42,11 +42,11 @@ Zoo/
 - **Animals**: Giant Panda, Red Panda, Snow Leopard, Golden Snub-nosed Monkey, Sun Bear, Binturong
 - **Features**: Interactive animal cards with detailed information, habitat details, and conservation focus
 
-### Kevin's Zoo
-- **Status**: In development
-- **Planned**: Immersive wildlife experience with conservation efforts
-
-
+### Kevin's Wildlife Sanctuary
+- **Status**: ✅ Completed
+- **Focus**: Global wildlife conservation
+- **Animals**: Polar Bear, African Elephant, Bengal Tiger, Emperor Penguin, Komodo Dragon, Gray Wolf
+- **Features**: Diverse habitats, conservation focus, interactive learning, National Geographic-inspired design
 
 ## Design Features
 
