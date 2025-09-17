@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red Panda - David's Zoo</title>
+    <link rel="stylesheet" type="text/css" href="css/david-zoo.css">
+    <script src="js/navigation.js" defer></script>
+    <style>
+        /* Red Panda specific hero styling */
+        .hero-section {
+            background: linear-gradient(135deg, #8B4513 0%, #CD853F 50%, #DEB887 100%);
+        }
+        
+        .hero-section::before {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="bamboo" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="8" y="0" width="4" height="20" fill="rgba(255,255,255,0.1)"/><rect x="6" y="2" width="2" height="16" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23bamboo)"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
+            <h1>David's Zoo</h1>
+            <div class="nav-spacer"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Red Panda</h1>
+                <p class="hero-subtitle">The Fire Fox - Asia's Adorable Bamboo Specialist</p>
+                <img src="img/RedPanda.jpg" alt="Red Panda in natural habitat" class="hero-image">
+            </div>
+        </section>
+        
+        <div class="content-grid">
+            <div class="main-content">
+                <h2 class="section-title">About the Red Panda</h2>
+                <div class="section-content">
+                    <p>The Red Panda (<em>Ailurus fulgens</em>) is one of nature's most endearing and charismatic creatures, often called the "fire fox" due to its striking reddish-brown fur and fox-like appearance. Despite its name, the Red Panda is not closely related to the Giant Panda, but rather forms its own unique family, Ailuridae.</p>
+                    
+                    <p>These adorable mammals are perfectly adapted to life in the cool, temperate forests of the Eastern Himalayas, where they spend most of their time high in the trees. With their distinctive ringed tails, masked faces, and gentle demeanor, Red Pandas have captured hearts worldwide and serve as important ambassadors for forest conservation.</p>
+                </div>
+                
+                <h2 class="section-title">Physical Characteristics</h2>
+                <div class="section-content">
+                    <p>Red Pandas possess unique adaptations for their arboreal lifestyle:</p>
+                    <ul>
+                        <li><strong>Size:</strong> Adults weigh 3-6 kg (6.6-13.2 lbs) and measure 50-64 cm (20-25 inches) in body length</li>
+                        <li><strong>Fur:</strong> Soft, dense reddish-brown to chestnut coat with black underparts and legs</li>
+                        <li><strong>Tail:</strong> Long, bushy tail (28-59 cm) with distinctive alternating red and buff rings</li>
+                        <li><strong>Face:</strong> White face with reddish-brown "tear marks" extending from eyes to mouth</li>
+                        <li><strong>Paws:</strong> Semi-retractable claws and specialized wrist bone for gripping bamboo</li>
+                        <li><strong>Teeth:</strong> Broad, flat molars adapted for grinding tough bamboo</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Habitat & Distribution</h2>
+                <div class="section-content">
+                    <p>Red Pandas inhabit the temperate forests of the Eastern Himalayas, including:</p>
+                    <ul>
+                        <li>Nepal, Bhutan, and northeastern India</li>
+                        <li>Northern Myanmar and southern China</li>
+                        <li>Tibet and Yunnan Province</li>
+                        <li>Eastern Himalayas and Hengduan Mountains</li>
+                    </ul>
+                    <p>They prefer cool, temperate forests with dense bamboo undergrowth at elevations between 2,200-4,800 meters (7,200-15,700 feet). These forests provide the perfect combination of bamboo for food, trees for shelter, and cool temperatures that Red Pandas require for their survival.</p>
+                </div>
+                
+                <h2 class="section-title">Diet & Feeding Behavior</h2>
+                <div class="section-content">
+                    <p>Red Pandas are specialized bamboo feeders with a unique digestive system:</p>
+                    <ul>
+                        <li><strong>Primary Diet:</strong> Bamboo leaves and shoots (85-95% of diet)</li>
+                        <li><strong>Secondary Foods:</strong> Fruits, berries, acorns, and roots</li>
+                        <li><strong>Occasional Prey:</strong> Eggs, small birds, and insects</li>
+                        <li><strong>Feeding Time:</strong> Most active during dawn and dusk (crepuscular)</li>
+                    </ul>
+                    <p>Despite being classified as carnivores, Red Pandas have adapted to survive on a primarily herbivorous diet. They spend 13 hours a day feeding and can consume up to 20,000 bamboo leaves daily. Their specialized wrist bone acts like a "false thumb," helping them grasp bamboo stems while feeding.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3>Conservation Status: ENDANGERED</h3>
+                    <p>Red Pandas face severe threats from habitat loss, fragmentation, and poaching. With only 10,000-20,000 individuals remaining in the wild, urgent conservation action is needed to protect these beloved forest guardians.</p>
+                </div>
+                
+                <h2 class="section-title">Behavior & Lifestyle</h2>
+                <div class="section-content">
+                    <p>Red Pandas lead fascinating lives in the treetops:</p>
+                    <ul>
+                        <li><strong>Arboreal Lifestyle:</strong> Spend 90% of their time in trees, rarely coming to ground</li>
+                        <li><strong>Solitary Nature:</strong> Generally live alone except during mating season</li>
+                        <li><strong>Territorial:</strong> Mark territory with scent glands and urine</li>
+                        <li><strong>Excellent Climbers:</strong> Descend trees headfirst using their flexible ankles</li>
+                        <li><strong>Temperature Sensitive:</strong> Cannot tolerate temperatures above 25°C (77°F)</li>
+                        <li><strong>Sleep Patterns:</strong> Sleep 13-14 hours daily, often curled up in tree branches</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Conservation Challenges</h2>
+                <div class="section-content">
+                    <p>Protecting Red Pandas requires addressing multiple critical threats:</p>
+                    <ul>
+                        <li><strong>Habitat Loss:</strong> Deforestation for agriculture, logging, and development</li>
+                        <li><strong>Habitat Fragmentation:</strong> Roads and infrastructure dividing populations</li>
+                        <li><strong>Climate Change:</strong> Rising temperatures affecting bamboo growth and distribution</li>
+                        <li><strong>Poaching:</strong> Illegal hunting for fur and traditional medicine</li>
+                        <li><strong>Livestock Grazing:</strong> Competition for bamboo resources</li>
+                        <li><strong>Disease:</strong> Canine distemper from domestic dogs</li>
+                        <li><strong>Low Reproductive Rate:</strong> Only 1-2 cubs per year, slow population recovery</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Conservation Efforts</h2>
+                <div class="section-content">
+                    <p>International conservation initiatives are working to protect Red Pandas:</p>
+                    <ul>
+                        <li><strong>Protected Areas:</strong> Establishing and expanding national parks and reserves</li>
+                        <li><strong>Community Conservation:</strong> Involving local communities in protection efforts</li>
+                        <li><strong>Bamboo Reforestation:</strong> Planting bamboo corridors to connect fragmented habitats</li>
+                        <li><strong>Research & Monitoring:</strong> Camera trapping and GPS tracking studies</li>
+                        <li><strong>Captive Breeding:</strong> Zoo programs to maintain genetic diversity</li>
+                        <li><strong>Education Programs:</strong> Raising awareness about Red Panda conservation</li>
+                        <li><strong>Anti-Poaching:</strong> Strengthening law enforcement and patrols</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label">Scientific Name:</span> <span class="info-value">Ailurus fulgens</span></li>
+                        <li><span class="info-label">Common Names:</span> <span class="info-value">Red Panda, Fire Fox, Lesser Panda</span></li>
+                        <li><span class="info-label">Size:</span> <span class="info-value">50-64cm body</span></li>
+                        <li><span class="info-label">Weight:</span> <span class="info-value">3-6 kg</span></li>
+                        <li><span class="info-label">Lifespan:</span> <span class="info-value">8-12 years</span></li>
+                        <li><span class="info-label">Diet:</span> <span class="info-value">Herbivore (bamboo specialist)</span></li>
+                        <li><span class="info-label">Habitat:</span> <span class="info-value">Temperate forests</span></li>
+                        <li><span class="info-label">Activity:</span> <span class="info-value">Crepuscular</span></li>
+                        <li><span class="info-label">Conservation:</span> <span class="info-value">Endangered</span></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Amazing Adaptations</h3>
+                    <ul class="info-list">
+                        <li>• "False thumb" for gripping bamboo</li>
+                        <li>• Descend trees headfirst</li>
+                        <li>• Eat 20,000 bamboo leaves daily</li>
+                        <li>• Temperature sensitive (max 25°C)</li>
+                        <li>• Sleep 13-14 hours per day</li>
+                        <li>• Ringed tail for balance</li>
+                        <li>• Excellent night vision</li>
+                    </ul>
+                </div>
+                
+                <div class="conservation-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">10,000-20,000</span>
+                        <div class="stat-label">Wild Population</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5</span>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50%</span>
+                        <div class="stat-label">Population Decline (20 years)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/Red-Panda-Perched.jpg" alt="Red Panda perched in tree">
+                <div class="gallery-caption">Red Panda in its natural arboreal habitat, perfectly adapted for life in the treetops</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/funnyredpanda.jpeg" alt="Funny Red Panda expression">
+                <div class="gallery-caption">Red Pandas are known for their expressive faces and curious personalities</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/red-panda-mom_chester-zoo.jpeg" alt="Red Panda mother with cub">
+                <div class="gallery-caption">Red Panda mother caring for her cub - the future of this endangered species</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/baby-red-pandas2-8825-0b1b5b9f759147609f51d27f4f6a7164.jpg" alt="Baby Red Pandas">
+                <div class="gallery-caption">Adorable baby Red Pandas - each one represents hope for species survival</div>
+            </div>
+        </div>
+        
+        <section class="main-content citations-section">
+            <h2 class="section-title">References & Sources</h2>
+            <div class="section-content">
+                <p>The information on this page has been compiled from reputable scientific and conservation sources:</p>
+                <ul>
+                    <li><strong>Glatston, A., et al.</strong> (2015). "Ailurus fulgens." <em>The IUCN Red List of Threatened Species</em>. International Union for Conservation of Nature.</li>
+                    <li><strong>Red Panda Network.</strong> (2023). "Red Panda Facts." <a href="https://www.redpandanetwork.org" target="_blank">www.redpandanetwork.org</a></li>
+                    <li><strong>World Wildlife Fund (WWF).</strong> (2023). "Red Panda." <a href="https://www.worldwildlife.org" target="_blank">www.worldwildlife.org</a></li>
+                    <li><strong>Roberts, M. S., & Gittleman, J. L.</strong> (1984). "Ailurus fulgens." <em>Mammalian Species</em>, 222, 1-8.</li>
+                    <li><strong>Yonzon, P. B., & Hunter, M. L.</strong> (1991). "Conservation of the red panda Ailurus fulgens." <em>Biological Conservation</em>, 57(1), 1-11.</li>
+                    <li><strong>Wei, F., et al.</strong> (1999). "Current distribution, status and conservation of wild red pandas Ailurus fulgens in China." <em>Biological Conservation</em>, 89(3), 285-291.</li>
+                    <li><strong>Pradhan, S., et al.</strong> (2001). "Ecology of the red panda Ailurus fulgens in the Singhalila National Park, Darjeeling, India." <em>Biological Conservation</em>, 98(1), 11-18.</li>
+                    <li><strong>Red Panda Network.</strong> (2023). "Conservation Action Plan for Red Pandas." <a href="https://www.redpandanetwork.org" target="_blank">www.redpandanetwork.org</a></li>
+                </ul>
+                <p><em>Last updated: January 2025. Information is regularly reviewed and updated to reflect the latest scientific research and conservation data.</em></p>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>David's Zoo - Connecting people with wildlife since 2025</p>
+    </footer>
+</body>
+</html>
