@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Golden Snub-Nosed Monkey - David's Zoo</title>
+    <link rel="stylesheet" type="text/css" href="css/david-zoo.css">
+    <script src="js/navigation.js" defer></script>
+    <style>
+        /* Golden Snub-Nosed Monkey specific hero styling */
+        .hero-section {
+            background: linear-gradient(135deg, #8B4513 0%, #DAA520 50%, #FFD700 100%);
+        }
+        
+        .hero-section::before {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="mountains" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse"><polygon points="0,25 12.5,10 25,25" fill="rgba(255,255,255,0.1)"/><polygon points="5,25 15,15 20,25" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23mountains)"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
+            <h1>David's Zoo</h1>
+            <div class="nav-spacer"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Golden Snub-Nosed Monkey</h1>
+                <p class="hero-subtitle">China's Mountain Guardian - The Golden Treasure of the Qinling Mountains</p>
+                <img src="img/GoldenSnubMonkey.jpg" alt="Golden Snub-Nosed Monkey in natural habitat" class="hero-image">
+            </div>
+        </section>
+        
+        <div class="content-grid">
+            <div class="main-content">
+                <h2 class="section-title">About the Golden Snub-Nosed Monkey</h2>
+                <div class="section-content">
+                    <p>The Golden Snub-Nosed Monkey (<em>Rhinopithecus roxellana</em>) is one of China's most magnificent and endangered primates, known for its striking golden fur and distinctive upturned nose. These remarkable monkeys are perfectly adapted to life in the cold, high-altitude forests of central China, where they form complex social groups and play a crucial role in forest ecosystems.</p>
+                    
+                    <p>With their thick, luxurious golden coats, expressive blue faces, and unique social structures, Golden Snub-Nosed Monkeys are not only beautiful but also highly intelligent creatures that have captured the hearts of researchers and conservationists worldwide. They serve as important flagship species for mountain forest conservation in China.</p>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label">Scientific Name:</span> <span class="info-value">Rhinopithecus roxellana</span></li>
+                        <li><span class="info-label">Common Names:</span> <span class="info-value">Golden Snub-Nosed Monkey, Sichuan Golden Monkey</span></li>
+                        <li><span class="info-label">Size:</span> <span class="info-value">51-83cm body</span></li>
+                        <li><span class="info-label">Weight:</span> <span class="info-value">15-39 kg</span></li>
+                        <li><span class="info-label">Lifespan:</span> <span class="info-value">20-25 years</span></li>
+                        <li><span class="info-label">Diet:</span> <span class="info-value">Herbivore</span></li>
+                        <li><span class="info-label">Habitat:</span> <span class="info-value">Mountain forests</span></li>
+                        <li><span class="info-label">Activity:</span> <span class="info-value">Diurnal</span></li>
+                        <li><span class="info-label">Conservation:</span> <span class="info-value">Endangered</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>David's Zoo - Connecting people with wildlife since 2025</p>
+    </footer>
+</body>
+</html>
