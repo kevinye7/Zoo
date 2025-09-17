@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Binturong - David's Zoo</title>
+    <link rel="stylesheet" type="text/css" href="css/david-zoo.css">
+    <script src="js/navigation.js" defer></script>
+    <style>
+        /* Binturong specific hero styling */
+        .hero-section {
+            background: linear-gradient(135deg, #2F4F4F 0%, #708090 50%, #A9A9A9 100%);
+        }
+        
+        .hero-section::before {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="leaves" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="8" fill="rgba(255,255,255,0.1)"/><circle cx="25" cy="25" r="6" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23leaves)"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
+            <h1>David's Zoo</h1>
+            <div class="nav-spacer"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Binturong</h1>
+                <p class="hero-subtitle">The Bearcat - Southeast Asia's Mysterious Tree Dweller</p>
+                <img src="img/Binturong.jpg" alt="Binturong in natural habitat" class="hero-image">
+            </div>
+        </section>
+        
+        <div class="content-grid">
+            <div class="main-content">
+                <h2 class="section-title">About the Binturong</h2>
+                <div class="section-content">
+                    <p>The Binturong (<em>Arctictis binturong</em>) is one of Southeast Asia's most enigmatic and fascinating creatures, often called the "bearcat" due to its bear-like appearance and cat-like agility. Despite its name, the Binturong is neither a bear nor a cat, but rather belongs to the family Viverridae, making it a close relative of civets and genets.</p>
+                    
+                    <p>These remarkable mammals are perfectly adapted to life in the dense tropical forests of Southeast Asia, where they spend most of their time high in the canopy. With their distinctive prehensile tails, shaggy black fur, and unique popcorn-like scent, Binturongs are truly one of nature's most intriguing forest dwellers.</p>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label">Scientific Name:</span> <span class="info-value">Arctictis binturong</span></li>
+                        <li><span class="info-label">Common Names:</span> <span class="info-value">Binturong, Bearcat</span></li>
+                        <li><span class="info-label">Size:</span> <span class="info-value">61-96cm body</span></li>
+                        <li><span class="info-label">Weight:</span> <span class="info-value">9-20 kg</span></li>
+                        <li><span class="info-label">Lifespan:</span> <span class="info-value">18-25 years</span></li>
+                        <li><span class="info-label">Diet:</span> <span class="info-value">Omnivore</span></li>
+                        <li><span class="info-label">Habitat:</span> <span class="info-value">Tropical forests</span></li>
+                        <li><span class="info-label">Activity:</span> <span class="info-value">Nocturnal</span></li>
+                        <li><span class="info-label">Conservation:</span> <span class="info-value">Vulnerable</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>David's Zoo - Connecting people with wildlife since 2025</p>
+    </footer>
+</body>
+</html>
