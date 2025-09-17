@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Binturong - David's Zoo</title>
+    <link rel="stylesheet" type="text/css" href="css/david-zoo.css">
+    <script src="js/navigation.js" defer></script>
+    <style>
+        /* Binturong specific hero styling */
+        .hero-section {
+            background: linear-gradient(135deg, #2F4F4F 0%, #708090 50%, #A9A9A9 100%);
+        }
+        
+        .hero-section::before {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="leaves" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="8" fill="rgba(255,255,255,0.1)"/><circle cx="25" cy="25" r="6" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23leaves)"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
+            <h1>David's Zoo</h1>
+            <div class="nav-spacer"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Binturong</h1>
+                <p class="hero-subtitle">The Bearcat - Southeast Asia's Mysterious Tree Dweller</p>
+                <img src="img/Binturong.jpg" alt="Binturong in natural habitat" class="hero-image">
+            </div>
+        </section>
+        
+        <div class="content-grid">
+            <div class="main-content">
+                <h2 class="section-title">About the Binturong</h2>
+                <div class="section-content">
+                    <p>The Binturong (<em>Arctictis binturong</em>) is one of Southeast Asia's most enigmatic and fascinating creatures, often called the "bearcat" due to its bear-like appearance and cat-like agility. Despite its name, the Binturong is neither a bear nor a cat, but rather belongs to the family Viverridae, making it a close relative of civets and genets.</p>
+                    
+                    <p>These remarkable mammals are perfectly adapted to life in the dense tropical forests of Southeast Asia, where they spend most of their time high in the canopy. With their distinctive prehensile tails, shaggy black fur, and unique popcorn-like scent, Binturongs are truly one of nature's most intriguing forest dwellers.</p>
+                </div>
+                
+                <h2 class="section-title">Physical Characteristics</h2>
+                <div class="section-content">
+                    <p>Binturongs possess unique adaptations for their arboreal lifestyle:</p>
+                    <ul>
+                        <li><strong>Size:</strong> Adults weigh 9-20 kg (20-44 lbs) and measure 61-96 cm (24-38 inches) in body length</li>
+                        <li><strong>Fur:</strong> Long, coarse black or dark brown fur with lighter tips, giving a grizzled appearance</li>
+                        <li><strong>Tail:</strong> Prehensile tail (56-89 cm) that can support their full body weight</li>
+                        <li><strong>Face:</strong> Rounded ears with tufts of hair, small eyes, and long whiskers</li>
+                        <li><strong>Paws:</strong> Semi-retractable claws and flexible ankles for climbing</li>
+                        <li><strong>Teeth:</strong> Sharp canines and molars adapted for omnivorous diet</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Habitat & Distribution</h2>
+                <div class="section-content">
+                    <p>Binturongs inhabit the tropical forests of Southeast Asia, including:</p>
+                    <ul>
+                        <li>Indonesia (Sumatra, Java, Borneo, Sulawesi)</li>
+                        <li>Malaysia (Peninsular Malaysia, Sabah, Sarawak)</li>
+                        <li>Thailand, Vietnam, and Cambodia</li>
+                        <li>Philippines (Palawan and nearby islands)</li>
+                        <li>Myanmar, Laos, and Bangladesh</li>
+                    </ul>
+                    <p>They prefer dense, primary and secondary forests with tall trees and abundant fruit-bearing plants. Binturongs are highly arboreal and require continuous forest canopy for movement, rarely descending to the ground except to cross gaps between trees.</p>
+                </div>
+                
+                <h2 class="section-title">Diet & Feeding Behavior</h2>
+                <div class="section-content">
+                    <p>Binturongs are opportunistic omnivores with a diverse diet:</p>
+                    <ul>
+                        <li><strong>Primary Diet:</strong> Fruits, especially figs (70-80% of diet)</li>
+                        <li><strong>Secondary Foods:</strong> Leaves, shoots, and flowers</li>
+                        <li><strong>Animal Prey:</strong> Small mammals, birds, eggs, and insects</li>
+                        <li><strong>Feeding Time:</strong> Most active at night (nocturnal)</li>
+                    </ul>
+                    <p>These forest specialists play a crucial role as seed dispersers, particularly for fig trees. Their strong jaws and sharp teeth allow them to crack open hard fruits and nuts, while their prehensile tail provides stability while feeding in the treetops.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3>Conservation Status: VULNERABLE</h3>
+                    <p>Binturongs face significant threats from habitat loss, hunting, and the pet trade. With declining populations across their range, urgent conservation action is needed to protect these important forest seed dispersers.</p>
+                </div>
+                
+                <h2 class="section-title">Behavior & Lifestyle</h2>
+                <div class="section-content">
+                    <p>Binturongs lead fascinating lives in the forest canopy:</p>
+                    <ul>
+                        <li><strong>Arboreal Lifestyle:</strong> Spend most of their time in trees, rarely coming to ground</li>
+                        <li><strong>Nocturnal Activity:</strong> Most active during night hours, resting during day</li>
+                        <li><strong>Solitary Nature:</strong> Generally live alone except during mating season</li>
+                        <li><strong>Territorial:</strong> Mark territory with scent glands and vocalizations</li>
+                        <li><strong>Excellent Climbers:</strong> Use prehensile tail and flexible ankles for movement</li>
+                        <li><strong>Slow Movement:</strong> Deliberate, methodical movements through the canopy</li>
+                        <li><strong>Swimming Ability:</strong> Capable swimmers when necessary</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Conservation Challenges</h2>
+                <div class="section-content">
+                    <p>Protecting Binturongs requires addressing multiple critical threats:</p>
+                    <ul>
+                        <li><strong>Habitat Loss:</strong> Deforestation for agriculture, logging, and palm oil plantations</li>
+                        <li><strong>Habitat Fragmentation:</strong> Roads and development dividing forest populations</li>
+                        <li><strong>Hunting Pressure:</strong> Poaching for meat, fur, and traditional medicine</li>
+                        <li><strong>Pet Trade:</strong> Illegal capture for exotic pet market</li>
+                        <li><strong>Climate Change:</strong> Altering forest ecosystems and fruit availability</li>
+                        <li><strong>Low Reproductive Rate:</strong> Only 1-2 cubs per year, slow population recovery</li>
+                        <li><strong>Limited Research:</strong> Insufficient data on population trends and ecology</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Conservation Efforts</h2>
+                <div class="section-content">
+                    <p>International conservation initiatives are working to protect Binturongs:</p>
+                    <ul>
+                        <li><strong>Protected Areas:</strong> Establishing and expanding national parks and reserves</li>
+                        <li><strong>Habitat Restoration:</strong> Reforesting degraded areas and creating wildlife corridors</li>
+                        <li><strong>Community Conservation:</strong> Involving local communities in protection efforts</li>
+                        <li><strong>Research & Monitoring:</strong> Camera trapping and GPS tracking studies</li>
+                        <li><strong>Captive Breeding:</strong> Zoo programs to maintain genetic diversity</li>
+                        <li><strong>Education Programs:</strong> Raising awareness about Binturong conservation</li>
+                        <li><strong>Anti-Poaching:</strong> Strengthening law enforcement and patrols</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label">Scientific Name:</span> <span class="info-value">Arctictis binturong</span></li>
+                        <li><span class="info-label">Common Names:</span> <span class="info-value">Binturong, Bearcat</span></li>
+                        <li><span class="info-label">Size:</span> <span class="info-value">61-96cm body</span></li>
+                        <li><span class="info-label">Weight:</span> <span class="info-value">9-20 kg</span></li>
+                        <li><span class="info-label">Lifespan:</span> <span class="info-value">18-25 years</span></li>
+                        <li><span class="info-label">Diet:</span> <span class="info-value">Omnivore</span></li>
+                        <li><span class="info-label">Habitat:</span> <span class="info-value">Tropical forests</span></li>
+                        <li><span class="info-label">Activity:</span> <span class="info-value">Nocturnal</span></li>
+                        <li><span class="info-label">Conservation:</span> <span class="info-value">Vulnerable</span></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Amazing Adaptations</h3>
+                    <ul class="info-list">
+                        <li>• Prehensile tail supports full body weight</li>
+                        <li>• Popcorn-like scent from scent glands</li>
+                        <li>• Can rotate ankles 180 degrees</li>
+                        <li>• Excellent climbers and swimmers</li>
+                        <li>• Long whiskers for night navigation</li>
+                        <li>• Strong jaws for cracking nuts</li>
+                        <li>• Slow, deliberate movements</li>
+                    </ul>
+                </div>
+                
+                <div class="conservation-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">Unknown</span>
+                        <div class="stat-label">Wild Population</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">11</span>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">30%</span>
+                        <div class="stat-label">Population Decline (20 years)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/binterong_02.jpg" alt="Binturong in natural habitat">
+                <div class="gallery-caption">Binturong in its natural forest habitat, perfectly adapted for life in the treetops</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/Binturong-Slider-1.webp" alt="Binturong close-up portrait">
+                <div class="gallery-caption">The distinctive face and shaggy fur that gives binturongs their unique appearance</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/binturong-update.avif" alt="Binturong showing prehensile tail">
+                <div class="gallery-caption">Binturong demonstrating its remarkable prehensile tail adaptation</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/binturongbabies.jpeg" alt="Baby binturongs">
+                <div class="gallery-caption">Adorable baby binturongs - the future of this vulnerable species</div>
+            </div>
+        </div>
+        
+        <section class="main-content citations-section">
+            <h2 class="section-title">References & Sources</h2>
+            <div class="section-content">
+                <p>The information on this page has been compiled from reputable scientific and conservation sources:</p>
+                <ul>
+                    <li><strong>Willcox, D., et al.</strong> (2016). "Arctictis binturong." <em>The IUCN Red List of Threatened Species</em>. International Union for Conservation of Nature.</li>
+                    <li><strong>Binturong Conservation Project.</strong> (2023). "Binturong Facts and Conservation." <a href="https://www.binturongconservation.org" target="_blank">www.binturongconservation.org</a></li>
+                    <li><strong>World Wildlife Fund (WWF).</strong> (2023). "Binturong." <a href="https://www.worldwildlife.org" target="_blank">www.worldwildlife.org</a></li>
+                    <li><strong>Lekagul, B., & McNeely, J. A.</strong> (1977). <em>Mammals of Thailand</em>. Association for the Conservation of Wildlife.</li>
+                    <li><strong>Nakabayashi, M., et al.</strong> (2019). "The role of binturongs (Arctictis binturong) in seed dispersal of a large-seeded tree species." <em>Biotropica</em>, 51(4), 512-520.</li>
+                    <li><strong>Duckworth, J. W., et al.</strong> (2008). "Arctictis binturong." <em>Mammalian Species</em>, 815, 1-8.</li>
+                    <li><strong>Azlan, J. M., & Lading, E.</strong> (2006). "Camera trapping and conservation in Lambir Hills National Park, Sarawak." <em>The Raffles Bulletin of Zoology</em>, 54(2), 469-475.</li>
+                    <li><strong>Traeholt, C., et al.</strong> (2005). "Range use by binturongs (Arctictis binturong) in a tropical forest in Sabah, Malaysia." <em>Biotropica</em>, 37(3), 436-445.</li>
+                </ul>
+                <p><em>Last updated: January 2025. Information is regularly reviewed and updated to reflect the latest scientific research and conservation data.</em></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>David's Zoo - Connecting people with wildlife since 2025</p>
+    </footer>
+</body>
+</html>
