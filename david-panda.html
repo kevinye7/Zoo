@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giant Panda - David's Zoo</title>
+    <link rel="stylesheet" type="text/css" href="css/david-zoo.css">
+    <script src="js/navigation.js" defer></script>
+    <style>
+        /* Giant Panda specific hero styling */
+        .hero-section {
+            background: linear-gradient(135deg, #000000 0%, #696969 50%, #FFFFFF 100%);
+        }
+        
+        .hero-section::before {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="bamboo" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="8" y="0" width="4" height="20" fill="rgba(255,255,255,0.1)"/><rect x="6" y="2" width="2" height="16" fill="rgba(255,255,255,0.05)"/><rect x="10" y="4" width="2" height="12" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23bamboo)"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
+            <h1>David's Zoo</h1>
+            <div class="nav-spacer"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Giant Panda</h1>
+                <p class="hero-subtitle">China's National Treasure - The Beloved Bamboo Bear</p>
+                <img src="img/GiantPanda.png" alt="Giant Panda in natural habitat" class="hero-image">
+            </div>
+        </section>
+        
+        <div class="content-grid">
+            <div class="main-content">
+                <h2 class="section-title">About the Giant Panda</h2>
+                <div class="section-content">
+                    <p>The Giant Panda (<em>Ailuropoda melanoleuca</em>) is one of the world's most beloved and iconic animals, serving as China's national treasure and a global symbol of wildlife conservation. These magnificent bears are perfectly adapted to life in the bamboo forests of central China, where they have captured hearts worldwide with their distinctive black and white markings and gentle demeanor.</p>
+                    
+                    <p>Despite being classified as carnivores, Giant Pandas have evolved to survive almost entirely on bamboo, making them one of nature's most specialized herbivores. With their unique adaptations, complex social behaviors, and critical conservation status, Giant Pandas represent both the beauty and fragility of our natural world.</p>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label">Scientific Name:</span> <span class="info-value">Ailuropoda melanoleuca</span></li>
+                        <li><span class="info-label">Common Names:</span> <span class="info-value">Giant Panda, Panda Bear</span></li>
+                        <li><span class="info-label">Size:</span> <span class="info-value">120-190cm body</span></li>
+                        <li><span class="info-label">Weight:</span> <span class="info-value">80-125 kg</span></li>
+                        <li><span class="info-label">Lifespan:</span> <span class="info-value">20-30 years</span></li>
+                        <li><span class="info-label">Diet:</span> <span class="info-value">Herbivore (bamboo specialist)</span></li>
+                        <li><span class="info-label">Habitat:</span> <span class="info-value">Bamboo forests</span></li>
+                        <li><span class="info-label">Activity:</span> <span class="info-value">Crepuscular</span></li>
+                        <li><span class="info-label">Conservation:</span> <span class="info-value">Vulnerable</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>David's Zoo - Connecting people with wildlife since 2025</p>
+    </footer>
+</body>
+</html>
