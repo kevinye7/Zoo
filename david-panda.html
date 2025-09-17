@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giant Panda - David's Zoo</title>
+    <link rel="stylesheet" type="text/css" href="css/david-zoo.css">
+    <script src="js/navigation.js" defer></script>
+    <style>
+        /* Giant Panda specific hero styling */
+        .hero-section {
+            background: linear-gradient(135deg, #000000 0%, #696969 50%, #FFFFFF 100%);
+        }
+        
+        .hero-section::before {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="bamboo" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="8" y="0" width="4" height="20" fill="rgba(255,255,255,0.1)"/><rect x="6" y="2" width="2" height="16" fill="rgba(255,255,255,0.05)"/><rect x="10" y="4" width="2" height="12" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23bamboo)"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-buttons">
+                <button onclick="goHome()" class="home-btn">Home</button>
+                <button onclick="goBack()" class="back-btn-nav">← Back</button>
+            </div>
+            <h1>David's Zoo</h1>
+            <div class="nav-spacer"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Giant Panda</h1>
+                <p class="hero-subtitle">China's National Treasure - The Beloved Bamboo Bear</p>
+                <img src="img/GiantPanda.png" alt="Giant Panda in natural habitat" class="hero-image">
+            </div>
+        </section>
+        
+        <div class="content-grid">
+            <div class="main-content">
+                <h2 class="section-title">About the Giant Panda</h2>
+                <div class="section-content">
+                    <p>The Giant Panda (<em>Ailuropoda melanoleuca</em>) is one of the world's most beloved and iconic animals, serving as China's national treasure and a global symbol of wildlife conservation. These magnificent bears are perfectly adapted to life in the bamboo forests of central China, where they have captured hearts worldwide with their distinctive black and white markings and gentle demeanor.</p>
+                    
+                    <p>Despite being classified as carnivores, Giant Pandas have evolved to survive almost entirely on bamboo, making them one of nature's most specialized herbivores. With their unique adaptations, complex social behaviors, and critical conservation status, Giant Pandas represent both the beauty and fragility of our natural world.</p>
+                </div>
+                
+                <h2 class="section-title">Physical Characteristics</h2>
+                <div class="section-content">
+                    <p>Giant Pandas possess unique adaptations for their bamboo-specialized lifestyle:</p>
+                    <ul>
+                        <li><strong>Size:</strong> Adults weigh 80-125 kg (176-275 lbs) and measure 120-190 cm (47-75 inches) in body length</li>
+                        <li><strong>Fur:</strong> Dense, woolly black and white fur providing excellent camouflage</li>
+                        <li><strong>Face:</strong> Distinctive black patches around eyes, ears, and muzzle</li>
+                        <li><strong>Paws:</strong> Large, padded paws with retractable claws and specialized wrist bone</li>
+                        <li><strong>Teeth:</strong> Broad, flat molars adapted for grinding tough bamboo</li>
+                        <li><strong>Tail:</strong> Short, stubby tail (10-15 cm) covered in white fur</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Habitat & Distribution</h2>
+                <div class="section-content">
+                    <p>Giant Pandas inhabit the temperate bamboo forests of central China, including:</p>
+                    <ul>
+                        <li>Sichuan Province (Sichuan Giant Panda Sanctuaries)</li>
+                        <li>Shaanxi Province (Qinling Mountains)</li>
+                        <li>Gansu Province (Min Mountains)</li>
+                        <li>Hubei Province (Shennongjia National Park)</li>
+                        <li>Chongqing Municipality</li>
+                    </ul>
+                    <p>They prefer cool, moist bamboo forests at elevations between 1,200-4,000 meters (3,900-13,100 feet). These forests provide the perfect combination of bamboo for food, trees for shelter, and cool temperatures that Giant Pandas require for their survival.</p>
+                </div>
+                
+                <h2 class="section-title">Diet & Feeding Behavior</h2>
+                <div class="section-content">
+                    <p>Giant Pandas are specialized bamboo feeders with unique digestive adaptations:</p>
+                    <ul>
+                        <li><strong>Primary Diet:</strong> Bamboo leaves, stems, and shoots (99% of diet)</li>
+                        <li><strong>Bamboo Species:</strong> Consume 20-40 different bamboo species</li>
+                        <li><strong>Daily Intake:</strong> 12-38 kg (26-84 lbs) of bamboo daily</li>
+                        <li><strong>Feeding Time:</strong> Spend 10-16 hours per day eating</li>
+                        <li><strong>Seasonal Diet:</strong> Different bamboo parts based on season</li>
+                    </ul>
+                    <p>Despite being classified as carnivores, Giant Pandas have evolved to survive on a diet of bamboo. Their specialized digestive system and "false thumb" (enlarged wrist bone) allow them to efficiently grasp and process bamboo, though they can only digest about 17% of what they consume.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3>Conservation Status: VULNERABLE</h3>
+                    <p>Giant Pandas have made remarkable recovery from endangered to vulnerable status, with wild populations now estimated at 1,800-2,000 individuals. This success story demonstrates the power of dedicated conservation efforts and international cooperation.</p>
+                </div>
+                
+                <h2 class="section-title">Behavior & Social Structure</h2>
+                <div class="section-content">
+                    <p>Giant Pandas lead fascinating lives in the bamboo forests:</p>
+                    <ul>
+                        <li><strong>Solitary Nature:</strong> Generally live alone except during mating season</li>
+                        <li><strong>Territorial Behavior:</strong> Mark territory with scent glands and vocalizations</li>
+                        <li><strong>Climbing Ability:</strong> Excellent climbers, often rest in trees</li>
+                        <li><strong>Swimming Skills:</strong> Capable swimmers when necessary</li>
+                        <li><strong>Communication:</strong> Use vocalizations, scent marking, and body language</li>
+                        <li><strong>Mating Season:</strong> Brief breeding period in spring (March-May)</li>
+                        <li><strong>Parental Care:</strong> Mothers provide extensive care for cubs for 18-24 months</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Conservation Challenges</h2>
+                <div class="section-content">
+                    <p>While Giant Pandas have made significant recovery, they still face several challenges:</p>
+                    <ul>
+                        <li><strong>Habitat Fragmentation:</strong> Isolated populations due to human development</li>
+                        <li><strong>Climate Change:</strong> Bamboo flowering cycles and habitat shifts</li>
+                        <li><strong>Low Reproductive Rate:</strong> Only 1 cub every 2-3 years</li>
+                        <li><strong>Genetic Diversity:</strong> Small population size limits genetic variation</li>
+                        <li><strong>Bamboo Dependence:</strong> Vulnerable to bamboo die-offs</li>
+                        <li><strong>Human Development:</strong> Infrastructure and agriculture pressure</li>
+                        <li><strong>Disease Risk:</strong> Susceptible to infectious diseases in small populations</li>
+                    </ul>
+                </div>
+                
+                <h2 class="section-title">Conservation Success Story</h2>
+                <div class="section-content">
+                    <p>Giant Panda conservation represents one of the world's greatest wildlife success stories:</p>
+                    <ul>
+                        <li><strong>Protected Areas:</strong> 67 panda reserves covering 1.4 million hectares</li>
+                        <li><strong>Captive Breeding:</strong> Successful breeding programs in zoos worldwide</li>
+                        <li><strong>Habitat Restoration:</strong> Reforestation and bamboo corridor creation</li>
+                        <li><strong>Community Involvement:</strong> Local communities engaged in conservation</li>
+                        <li><strong>International Cooperation:</strong> Global partnerships for panda conservation</li>
+                        <li><strong>Research Programs:</strong> Extensive scientific studies on behavior and ecology</li>
+                        <li><strong>Education Initiatives:</strong> Public awareness and environmental education</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label">Scientific Name:</span> <span class="info-value">Ailuropoda melanoleuca</span></li>
+                        <li><span class="info-label">Common Names:</span> <span class="info-value">Giant Panda, Panda Bear</span></li>
+                        <li><span class="info-label">Size:</span> <span class="info-value">120-190cm body</span></li>
+                        <li><span class="info-label">Weight:</span> <span class="info-value">80-125 kg</span></li>
+                        <li><span class="info-label">Lifespan:</span> <span class="info-value">20-30 years</span></li>
+                        <li><span class="info-label">Diet:</span> <span class="info-value">Herbivore (bamboo specialist)</span></li>
+                        <li><span class="info-label">Habitat:</span> <span class="info-value">Bamboo forests</span></li>
+                        <li><span class="info-label">Activity:</span> <span class="info-value">Crepuscular</span></li>
+                        <li><span class="info-label">Conservation:</span> <span class="info-value">Vulnerable</span></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Amazing Adaptations</h3>
+                    <ul class="info-list">
+                        <li>• "False thumb" for gripping bamboo</li>
+                        <li>• Can eat 12-38kg bamboo daily</li>
+                        <li>• Spend 10-16 hours eating</li>
+                        <li>• Digest only 17% of bamboo</li>
+                        <li>• Excellent climbers and swimmers</li>
+                        <li>• Black and white camouflage</li>
+                        <li>• Powerful jaw muscles</li>
+                    </ul>
+                </div>
+                
+                <div class="conservation-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">1,800-2,000</span>
+                        <div class="stat-label">Wild Population</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5</span>
+                        <div class="stat-label">Provinces</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">17%</span>
+                        <div class="stat-label">Population Increase (10 years)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/pandas-closeup.jpg" alt="Giant Panda close-up portrait">
+                <div class="gallery-caption">The distinctive black and white markings that make Giant Pandas instantly recognizable worldwide</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/pandaeatingleaves.jpg" alt="Giant Panda eating bamboo">
+                <div class="gallery-caption">Giant Panda demonstrating its specialized bamboo feeding behavior and "false thumb" adaptation</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/panda-climbing.webp" alt="Giant Panda climbing tree">
+                <div class="gallery-caption">Giant Panda showing its excellent climbing abilities in the bamboo forest</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/panda-cubs-group.avif" alt="Giant Panda cubs">
+                <div class="gallery-caption">Adorable Giant Panda cubs - the future of this beloved species</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/Panda-Bamboo_Panda-Quiz_KIDS_1021.avif" alt="Giant Panda with bamboo">
+                <div class="gallery-caption">Giant Panda in its natural bamboo forest habitat, perfectly adapted for life in the mountains</div>
+            </div>
+        </div>
+        
+        <section class="main-content citations-section">
+            <h2 class="section-title">References & Sources</h2>
+            <div class="section-content">
+                <p>The information on this page has been compiled from reputable scientific and conservation sources:</p>
+                <ul>
+                    <li><strong>Swaisgood, R., et al.</strong> (2016). "Ailuropoda melanoleuca." <em>The IUCN Red List of Threatened Species</em>. International Union for Conservation of Nature.</li>
+                    <li><strong>Giant Panda Global.</strong> (2023). "Giant Panda Facts and Conservation." <a href="https://www.giantpandaglobal.org" target="_blank">www.giantpandaglobal.org</a></li>
+                    <li><strong>World Wildlife Fund (WWF).</strong> (2023). "Giant Panda." <a href="https://www.worldwildlife.org" target="_blank">www.worldwildlife.org</a></li>
+                    <li><strong>Schaller, G. B.</strong> (1993). <em>The Last Panda</em>. University of Chicago Press.</li>
+                    <li><strong>Reid, D. G., et al.</strong> (1991). "Environmental influences on the activity of giant pandas." <em>Biological Conservation</em>, 55(3), 215-231.</li>
+                    <li><strong>Wei, F., et al.</strong> (2018). "Giant pandas are not an evolutionary cul-de-sac: evidence from multidisciplinary research." <em>Molecular Biology and Evolution</em>, 35(4), 4-14.</li>
+                    <li><strong>Zhang, Z., et al.</strong> (2007). "Ecological scale and seasonal heterogeneity in the spatial behaviors of giant pandas." <em>Integrative Zoology</em>, 2(3), 149-155.</li>
+                    <li><strong>China Conservation and Research Center for the Giant Panda.</strong> (2023). "Conservation Status Report." <a href="https://www.panda.org.cn" target="_blank">www.panda.org.cn</a></li>
+                </ul>
+                <p><em>Last updated: January 2025. Information is regularly reviewed and updated to reflect the latest scientific research and conservation data.</em></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>David's Zoo - Connecting people with wildlife since 2025</p>
+    </footer>
+</body>
+</html>
